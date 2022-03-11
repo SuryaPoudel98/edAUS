@@ -14,7 +14,7 @@ class SliderImageController extends Controller
      */
     public function index()
     {
-        $sliderimages=SliderImage::all();
+        $sliderimages=SliderImage::orderBy('created_at','desc')->get();
     
         return view('dashboard.sliderimage.all-sliderimage', compact('sliderimages'));
             // ->with('i', (request()->input('page', 1) - 1) * 5);

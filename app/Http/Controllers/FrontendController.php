@@ -21,7 +21,7 @@ class FrontendController extends Controller
       // $childpage = ChildPage::with('parentpage')->get();
 
     
-      $sliders=SliderImage::all();
+      $sliders=SliderImage::orderBy('created_at','desc')->get();
       return view('frontend1.index',compact('sliders') );
     }
 

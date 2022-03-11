@@ -72,7 +72,7 @@
 			$('#JiSlider').JiSlider({ color: '#fff', start: 3, reverse: true }).addClass('ff')
 		})
 	</script>
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-36251023-1']);
@@ -85,15 +85,15 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 
-	</script>
+	</script> -->
 	<!-- stats -->
-	<script src="{{ asset('frontend/js/jquery.waypoints.min.js') }}"></script>
-	<script src="{{ asset('frontend/js/jquery.countup.js') }}"></script>
+	<!-- <script src="{{ asset('frontend/js/jquery.waypoints.min.js') }}"></script>
+	<script src="{{ asset('frontend/js/jquery.countup.js') }}"></script> -->
 	<script>
 		$('.counter').countUp();
 	</script>
 	<!-- //stats -->
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		$(function () {
 			$("#bars li .bar").each(function (key, bar) {
 				var percentage = $(this).data('percentage');
@@ -103,7 +103,7 @@
 				}, 1000);
 			})
 		})
-	</script>
+	</script> -->
 	<!-- flexisel -->
 	<script type="text/javascript" src="{{ asset('frontend/js/jquery.flexisel.js') }}"></script>
 	<script type="text/javascript">
