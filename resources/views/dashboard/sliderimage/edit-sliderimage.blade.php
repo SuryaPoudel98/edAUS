@@ -3,7 +3,7 @@
 @section('content')
 <div>
          <div class="grid-form1">
-          <h3 id="forms-horizontal">Edit Slider Image</h3>
+          
             
                <a href="{{ route('Sliderimage.index')}}" class="btn btn-primary float-end"> view all Parentpage</a>
             
@@ -32,8 +32,8 @@
                         </div>
                     </div>
                     <div class="form-group " Style=" display:inline-flex; margin-left:35px;">
-                        <label for="image">Image input</label>
-                        <input type="file"  Style="margin-left:40px " name="image" placeholder="image" onchange="previewFile(this)">
+                        <label for="image">Upload Image</label>
+                        <input type="file"  Style="margin-left:28px " name="image" placeholder="image" onchange="previewFile(this)">
                         <img  id="previewImg" src="" alt="image" style="max-width:130px;margin-top:20px;" onerror='this.style.display = "none"' > 
    
 
@@ -42,7 +42,7 @@
                     
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="submit" class="btn btn-default">Update</button>
                         </div>
                     </div>
              </form>

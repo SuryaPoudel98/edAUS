@@ -29,7 +29,7 @@
                        </div>
                         <div class="col-sm-10">                       
                         <textarea id="editor" name="text" class="col-sm-2 control-label hor-form" value="{{ $parentcontent->child_title }}"  placeholder="Write here Description" > 
-                        {{ old('text') }}
+                        {{ old('editor') }}
                         </textarea>
                         </div>
                     </div>

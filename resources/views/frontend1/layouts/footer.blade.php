@@ -1,3 +1,4 @@
+
 	<!-- footer -->
 	<div class="footer">
 		<div class="container">
@@ -24,6 +25,7 @@
 						</li>
 					</ul>
 				</div>
+				
 				<div class="col-md-2 w3_agile_footer_grid">
 					<h3>Useful Links</h3>
 					<ul class="agileits_w3layouts_footer_grid_list">
@@ -42,7 +44,7 @@
 				<div class="col-md-3 w3_agile_footer_grid">
 					<h3>Office</h3>
 					<ul class="agile_footer_grid_list">
-						<li> Nayabazar-08, Pokhara  </li>
+						<li> 80-Nayabazar,Road Pokhara  </li>
 						<li> Opposite of Sajha prakshan  </li>
 						<li>  info@edaus.edu.np </li>
 					
@@ -52,6 +54,7 @@
 				</div>
 				<div class="clearfix"> </div>
 			</div>
+			
 			
 			
 			<div class="agileinfo_copyright">
@@ -189,4 +192,10 @@
               
                   };
 	</script>
+	<script src="{{ asset('frontend/js/bootnavbar.js')}}" ></script>
+    <script>
+        $(function () {
+            $('#main_navbar').bootnavbar();
+        })
+    </script>
 	<!-- //here ends scrolling icon -->

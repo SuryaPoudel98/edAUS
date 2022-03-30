@@ -131,7 +131,7 @@ a.navbar-brand i {
 .agile_short_dropdown {
 	border-radius: 0;
 	background: #ffffff;
-	text-align: center;
+	text-align: left;
 	padding: 0;
 	border: none;
 }
@@ -141,7 +141,7 @@ a.navbar-brand i {
 	color: #212121;
 	font-size: 13px;
 	font-weight: 600;
-	padding: .8em 0;
+	padding: 0.8em 0.8em;
 	border-bottom: 1px solid #ececef;
 }
 

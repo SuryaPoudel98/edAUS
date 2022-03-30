@@ -3,9 +3,9 @@
 @section('content')
 <div>
          <div class="grid-form1">
-          <h3 id="forms-horizontal">Edit Parent page</h3>
+  
             
-               <a href="{{ url('/all-parentpage')}}" class="btn btn-primary float-end"> view all Parentpage</a>
+               <a href="{{ url('/all-parentpage')}}" class="btn btn-primary float-end"> View All Parent Page</a>
             
                 @if(Session::has('parentpage_updated'))
                             <p class="alert alert-success"  > {{ Session::get('parentpage_updated') }}</p>
@@ -14,16 +14,16 @@
                 @csrf
                 <input type="hidden" name="id" value="{{ $parentpage->id }}"/>
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-2 control-label hor-form">Page title</label>
+                        <label for="inputEmail3" class="col-sm-2 control-label hor-form">Page Title</label>
                         <div class="col-sm-10">
                         <input type="text" class="col-xs-4 " id="title" name="title" value="{{ $parentpage->title }}"  placeholder="Enter page title">
                         </div>
                     </div>
                     <div class="form-group" Style="display:inline-flex; margin-left:35px;" >
-                        <label for="child" >choose option</label>
-                        <select name="ischild" class="form-select form-select-sm" Style="margin-left:23px" value="{{ $parentpage->ischild }}"  >                           
-                            <option value="1" >has childPage</option>
-                            <option value="0">No child</option>
+                        <label for="child" > Child Page</label>
+                        <select name="ischild" class="form-select form-select-sm" Style="margin-left:50px" value="{{ $parentpage->ischild }}"  >                           
+                            <option value="1" >Has Child Page</option>
+                            <option value="0">No Child</option>
                             
                        </select>   
                     </div>
@@ -31,7 +31,7 @@
                     
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="submit" class="btn btn-default">Update</button>
                         </div>
                     </div>
              </form>

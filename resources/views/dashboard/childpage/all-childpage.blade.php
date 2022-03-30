@@ -3,12 +3,9 @@
 @section('content')
    <div class="container">
                 <div class="row">
-                                <div class="col-lg-9 margin-tb">
-                                    <div class="pull-left">
-                                        <h2>all ChildPages </h2>
-                                    </div>
-                                    <div class="pull-right">
-                                        <a class="btn btn-success" href=" {{ url('/add-childpage') }}"> Add New ChildPage</a>
+                                <div class="col-lg-9 margin-tb">                                                                                                              
+                                    <div class="pull-left" style="margin-top: 10px;" >
+                                        <a class="btn btn-primary" href=" {{ url('/add-childpage') }}"> Add New Child Page</a>
                                     </div>
                                 </div>
                 </div>
@@ -18,9 +15,9 @@
                 <table class="table">
                         <thead class="thead-dark">
                             <tr>
-                            <th scope="col">id</th>
-                            <th scope="col">parentpage_id</th>
-                            <th scope="col">Childpage_name</th>
+                            <th scope="col">Id</th>
+                            <th scope="col">Parent Page</th>
+                            <th scope="col">Child Page</th>
                             <th scope="col">Action</th>                           
 
                            </tr>

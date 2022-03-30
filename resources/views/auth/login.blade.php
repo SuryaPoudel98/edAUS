@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
+    <div class="container formcontainer">
         <div class="row">
             <div class="col-md-4 col-md-offset-4"style="margin: top 20px;" >
                 <h4>login </h4>
@@ -16,27 +16,21 @@
                 <form action="/login" method="POST">
                     @csrf
                    
-                    <div class="form-group">
+                    <div class="form-group" style="margin-top:3%">
                         <label for="email" >Email </label>
-                        <input type="text" class="form-control" placeholder="Enter email address" name="email" value="">
+                        <input type="text" class="form-control" placeholder="Enter email address" name="email" value=""style="margin-top:1%">
                     </div> 
-                    <div class="form-group">
+                    <div class="form-group" style="margin-top:3%">
                         <label for="password" >Password </label>
-                        <input type="password" class="form-control" placeholder="Enter password" name="password" value="">
+                        <input type="password" class="form-control" placeholder="Enter password" name="password" value="" style="margin-top:1%">
                     </div> 
-                    <div class="form-group">
+                    <div class="form-group" style="margin-top:3%">
                         <button class="btn  btn-primary" type="submit"> Submit </button>
 
                     </div>
-                    <div class="form-group">
-                        <label for="remember" >
-                            <input id="remember " type="checkbox" name="remeber">
-                            <span> Remember me </span>
-                    </div>
+           
 
-                    <br>
-                    <a href="/login">new user !! register here ! </a>
-
+                    
 
                 </form>
 
@@ -49,6 +43,13 @@
 
 
     </div>
+
+    <style>
+        .formcontainer
+        {  margin-top: 10%;
+            margin-left:35%;
+        }
+    </style>   
 
  
 

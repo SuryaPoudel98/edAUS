@@ -4,10 +4,9 @@
    <div class="container">
                 <div class="row">
                                 <div class="col-lg-9 margin-tb">
-                                         
-                                   
-                                    <div class="pull-left" style="margin-top: 10px;">
-                                        <a class="btn btn-primary" href=" {{ route('Sliderimage.create') }}"> Add Slide Image</a>
+                                    
+                                    <div class="">
+                                        <a class="btn btn-primary" href=" {{ route('Testimonial.create') }}"> Add New Testimonial</a>
                                     </div>
                                 </div>
                 </div>
@@ -18,7 +17,10 @@
                         <thead class="thead-dark">
                             <tr>
                             <th scope="col">Id</th>
-                            <th scope="col">Image Capation</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+
+
                             <th scope="col">Images</th>
                           
                             <th scope="col">Action</th>  
@@ -29,16 +31,19 @@
                         </thead>
                         <tbody>
                            
-                        @foreach (  $sliderimages as $item)   
+                     @foreach ($testimonials as $testimonial)
+                         
+                   
                            
                             <tr>
-                                <th scope="row">{{ $item->id }} </th>
-                                <td>  {{ $item-> name }} </td>
+                                <th scope="row">{{ $testimonial->id  }}</th>
+                                <td>  {{ $testimonial->name  }} </td>
+                                <td>{{ $testimonial->description }} </td>
                                
-                                <td> <img src="uploads/slider/{{$item->image}}" width="100px"> </td>
+                                <td> <img src="uploads/testimonial/{{$testimonial->image }}" width="100px"> </td>
                                 <td style="display: inline-flex;" >                                   
-                                 <a class="btn btn-primary" href="{{ route('Sliderimage.edit',$item->id) }}">Edit</a>
-                                 <form action="{{ route('Sliderimage.destroy',$item->id) }}" method="POST">
+                                 
+                                 <form action="{{ route('Testimonial.destroy',$testimonial->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
 
@@ -49,8 +54,9 @@
 
                            
                             </tr>
+                        @endforeach   
 
-                            @endforeach   
+                            
 
                            
                             

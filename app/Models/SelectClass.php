@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\ChildPage;
+use App\Models\Testimonial;
+
 
 class SelectClass extends Model
 {
@@ -18,5 +20,11 @@ class SelectClass extends Model
                    ->get();
 
              return $subheading;
+    }
+
+    public function selectTestimonial()
+    {
+        $testinomials=Testimonial::all();
+        return  $testinomials;
     }
 }

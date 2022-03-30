@@ -4,11 +4,11 @@
    <div class="container">
                 <div class="row">
                                 <div class="col-lg-9 margin-tb">
-                                    <div class="pull-left">
-                                        <h2>all Child content </h2>
-                                    </div>
-                                    <div class="pull-right">
-                                        <a class="btn btn-success" href=" {{ url('/add-childcontent') }}"> Add New ChildContent</a>
+                                    
+                                        <h2 >All Child content </h2>
+                                    
+                                    <div class="pull-left" style="margin-top: 10px;">
+                                        <a class="btn btn-primary" href=" {{ url('/add-childcontent') }}"> Add New Content</a>
                                     </div>
                                 </div>
                 </div>
@@ -18,10 +18,10 @@
                 <table class="table">
                         <thead class="thead-dark">
                             <tr>
-                            <th scope="col">id</th>
-                            <th scope="col">ChildPage Id</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">images</th>  
+                            <th scope="col">Id</th>
+                            <th scope="col">Child Page Id</th>
+                            <th scope="col" style="width: max 200px;" >Description</th>
+                            <th scope="col">Images</th>  
                             <th scope="col">Action</th>  
 
 
@@ -35,7 +35,7 @@
                             <tr> 
 
                                 <th scope="row">{{  $childcontent->id}}</th>
-                                <td> {{ $childcontent->childpage->child_title}}     </td>
+                                <td> {{ $childcontent->childpage->child_title ?? null}}     </td>
                                 <td class="imagetext"  style="width: 700px;">{!! $childcontent->text !!}</td>
                                 <td> <img src="uploads/childcontentimg/{{ $childcontent->Thumbnailimg }} " width="100px"> </td>
                                 <td >

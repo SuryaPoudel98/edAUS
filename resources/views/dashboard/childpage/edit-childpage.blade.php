@@ -3,9 +3,9 @@
 @section('content')
 <div>
          <div class="grid-form1">
-          <h3 id="forms-horizontal">Edit Child page</h3>
+        
             
-               <a href="{{ url('/all-childpage')}}" class="btn btn-primary float-end"> view all Childpage</a>
+               <a href="{{ url('/all-childpage')}}" class="btn btn-primary float-end"> View All Childpage</a>
             
                 @if(Session::has('childpage_updated'))
                             <p class="alert alert-success"  > {{ Session::get('childpage_updated') }}</p>
@@ -14,8 +14,8 @@
                 @csrf
                 <input type="hidden" name="id" value="{{ $childpage->id }}"/>
                    <div class="form-group" Style="display:inline-flex; margin-left:35px;" >
-                        <label for="child"  >choose option</label>
-                        <select name="parentpage_id" id="parentpage_id" class="form-select form-select-sm"   value="{{ $childpage->parentpage_id }}"  Style="margin-left:25px ">
+                        <label for="child">Parent Page</label>
+                        <select name="parentpage_id" id="parentpage_id" class="form-select form-select-sm"   value="{{ $childpage->parentpage_id }}"  Style="margin-left:40px">
                      <option value="{{ $childpage->parentpage->id }}" selected >{{ $childpage->parentpage->title }} </option> -->
 
                     @foreach ($parentpages as $parentpage )
@@ -34,7 +34,7 @@
                        </select>   
                     </div>
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label hor-form">Childpage title</label>
+                            <label for="inputEmail3" class="col-sm-2 control-label hor-form">Child Page Title</label>
                             <div class="col-sm-10">
                             <input type="text" class="col-xs-4" id="title" name="title" value="{{ $childpage->child_title }}"  placeholder="Enter page title" required>
 
@@ -45,7 +45,7 @@
                     
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="submit" class="btn btn-default">Update</button>
                         </div>
                     </div>
              </form>

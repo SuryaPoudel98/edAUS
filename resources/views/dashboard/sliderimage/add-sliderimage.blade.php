@@ -3,8 +3,7 @@
 @section('content')
 <div>
          <div class="grid-form1">
-          <h3 id="forms-horizontal">Add image slider</h3>
-            
+          
                <a href="{{ url('/Sliderimage') }}" class="btn btn-primary float-end"> view all Parent Contents </a>
             
                        @if(Session::has('parentcontent_added'))
@@ -22,8 +21,8 @@
                         </div>
                     </div>
                     <div class="form-group " Style=" display:inline-flex; margin-left:35px;">
-                        <label for="exampleInputFile">Image input</label>
-                        <input type="file" Style="margin-left:40px " name="image" placeholder="image" onchange="previewFile(this)">
+                        <label for="exampleInputFile">Upload Image</label>
+                        <input type="file" Style="margin-left:28px " name="image" placeholder="image" onchange="previewFile(this)">
                          <img  id="previewImg" src="" alt="image" style="max-width:130px;margin-top:20px;" onerror='this.style.display = "none"' > 
                        
                     </div>

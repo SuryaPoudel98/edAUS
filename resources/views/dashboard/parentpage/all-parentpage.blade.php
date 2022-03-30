@@ -4,11 +4,9 @@
    <div class="container">
                 <div class="row">
                                 <div class="col-lg-9 margin-tb">
-                                    <div class="pull-left">
-                                        <h2>all Parentpages </h2>
-                                    </div>
-                                    <div class="pull-right">
-                                        <a class="btn btn-success" href=" {{ url('/add-parentpage') }}"> Add New ParentPage</a>
+                                   
+                                    <div class="pull-left" style="margin-top: 10px;">
+                                        <a class="btn btn-primary" href="{{ url('/add-parentpage') }}"> Add New ParentPage</a>
                                     </div>
                                 </div>
                 </div>
@@ -18,9 +16,9 @@
                 <table class="table">
                         <thead class="thead-dark">
                             <tr>
-                            <th scope="col">id</th>
-                            <th scope="col">title</th>
-                            <th scope="col">page status</th>
+                            <th scope="col">Id</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Page Status</th>
                             <th scope="col">Action</th>                           
 
                            </tr>

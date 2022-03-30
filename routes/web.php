@@ -7,6 +7,8 @@ use App\Http\Controllers\ParentContentController;
 use App\Http\Controllers\ChildContentController;
 use App\Http\Controllers\SliderImageController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\TestimonialController;
+
 use App\Http\Controllers\Mailcontroller;
 
 
@@ -82,6 +84,11 @@ Route::get('/delete-parentpage/{id}',[ParentPageController::class,'deleteParentp
 
  //image
  Route::resource('/Sliderimage', SliderImageController::class);
+
+ //testimonials
+ Route::resource('/Testimonial', TestimonialController::class);
+
+
 
 });
 

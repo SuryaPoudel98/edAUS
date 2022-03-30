@@ -3421,6 +3421,28 @@ tbody.collapse.in {
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
+
+
+.caret-right {
+  /* display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent; */
+
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+  border-left: 4px solid;
+  display: inline-block;
+  height: 0;
+
+  vertical-align: middle;
+  width: 0;
+
+}
 .dropup,
 .dropdown {
   position: relative;

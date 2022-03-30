@@ -219,7 +219,7 @@ if ( typeof Object.create !== "function" ) {
 				base.options.itemsMobile = false;
 				return false;
 			}
-
+			
 			var width = $(base.options.responsiveBaseWidth).width();
 
 			if(width > (base.options.itemsDesktop[0] || base.orignalItems) ){

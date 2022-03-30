@@ -48,8 +48,7 @@ class ChildContentController extends Controller
     { 
     
         $childcontent = ChildContent::FindorFail($id);
-       // $childpages= ChildPage::all();
-        //upagrade 
+        
          $childpages= ChildPage::where([ ['child_title','!=','$childpage->childpage->child_title'],
          ])->get();
 

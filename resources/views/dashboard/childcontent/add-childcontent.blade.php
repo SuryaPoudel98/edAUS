@@ -3,9 +3,9 @@
 @section('content')
 <div>
          <div class="grid-form1">
-          <h3 id="forms-horizontal">Child Content Page</h3>
+         
             
-               <a href="{{ url('/all-childcontent') }}" class="btn btn-primary float-end"> view all Child Contents </a>
+               <a href="{{ url('/all-childcontent') }}" class="btn btn-primary float-end"> View All Child Page Contents </a>
             
                        @if(Session::has('childcontent_added'))
                             <p class="alert alert-success"  > {{ Session::get('childcontent_added') }}</p>
@@ -23,9 +23,9 @@
                     </div>
                     <div class="form-group" Style="display:inline-flex; margin-left:35px;">
                         <div>
-                        <label for="for description">Description Text</label>
+                        <label for="for description">Description </label>
                        </div>
-                        <div class="col-sm-10" Style="margin-left:40px ">                       
+                        <div class="col-sm-10" Style="margin-left:73px ">                       
                         <textarea id="editor" name="text" class="col-sm-2 control-label hor-form"  placeholder="Write here Description" > 
 
                         </textarea>
@@ -45,8 +45,8 @@
                     
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-default">Submit</button>
-                        </div>
+                        <button type="submit" class="btn btn-default" style="margin-left:40px">Add</button>
+                        
                     </div>
              </form>
         </div>

@@ -88,21 +88,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div id="wrapper">
 
 <!----->
-        <nav class="navbar-default navbar-static-top" role="navigation">
+        <nav class="navbar-default navbar-static-top" role="navigation" style="position:fixed">
              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-               <h1> <a class="navbar-brand" href="{{ route('dashboard')}}">Dashboard</a></h1>         
+               
+               <h1> <a class="navbar-brand" href="{{ route('dashboard')}}">EDAUS</a></h1>         
 			   </div>
 			 <div class=" border-bottom">
         	<div class="full-left">
-        	<section class="full-top">
-				<button id="toggle"><i class="fa fa-arrows-alt"></i></button>	
-			</section>
+        	
 			
             <div class="clearfix"> </div>
            </div>
@@ -116,33 +109,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
        
      </div>
 	  <!-- slider left side -->
-		    <div class="navbar-default sidebar" role="navigation">
+		    <div class="navbar-default sidebar" role="navigation" style="position:fixed">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                    
                         <li>
-                            <a href="{{ route('parentpage')}}" class=" hvr-bounce-to-right"><i class="fa fa-indent nav_icon"></i> <span class="nav-label">AddParentPage</span><span class="fa arrow"></span></a>
+                            <a href="{{ route('parentpage')}}" class=" hvr-bounce-to-right"><i class="fa fa-indent nav_icon"></i> <span class="nav-label">Parent Page</span></span></a>
                           
                         </li>
                         <li>
-                            <a href="/add-childpage" class=" hvr-bounce-to-right"><i class="fa fa-inbox nav_icon"></i> <span class="nav-label">AddChildPage</span> </a>
+                            <a href="/add-childpage" class=" hvr-bounce-to-right"><i class="fa fa-inbox nav_icon"></i> <span class="nav-label">Child Page</span> </a>
                         </li>
                         
                         <li>
-                            <a href="{{ route('parentcontent')}}" class=" hvr-bounce-to-right"><i class="fa fa-picture-o nav_icon"></i> <span class="nav-label">ParentContentPage</span> </a>
+                            <a href="{{ route('parentcontent')}}" class=" hvr-bounce-to-right"><i class="fa fa-picture-o nav_icon"></i> <span class="nav-label">Parent Content Page</span> </a>
                         </li>
 						<li>
-                            <a href="{{ route('childcontent')}}" class=" hvr-bounce-to-right"><i class="fa fa-picture-o nav_icon"></i> <span class="nav-label">ChildContentPage</span> </a>
+                            <a href="{{ route('childcontent')}}" class=" hvr-bounce-to-right"><i class="fa fa-picture-o nav_icon"></i> <span class="nav-label">Child Content Page</span> </a>
                         </li>
                         <li>
-                            <a href="/Sliderimage" class=" hvr-bounce-to-right"><i class="fa fa-desktop nav_icon"></i> <span class="nav-label">Add Slider images </span><span class="fa arrow"></span></a>
+                            <a href="/Sliderimage" class=" hvr-bounce-to-right"><i class="fa fa-desktop nav_icon"></i> <span class="nav-label">Slider Images </span></a>
+                       
+                        </li>
+                        <li>
+                            <a href="{{ url('/Testimonial')}}" class=" hvr-bounce-to-right"><i class="fa fa-desktop nav_icon"></i> <span class="nav-label"> Testimonials </span></a>
                        
                         </li>
                         <li>
 							<div>
 						     <form method="post" action="{{ route('logout')}}" >
 								@csrf
-									<a href="{{route('logout')}}"  class="hvr-bounce-to-right" onclick="event.preventDefault(); this.closest('form').submit();"><i class="fa fa-cog nav_icon"></i> <span class="nav-label">logout </span>  </a>
+									<a href="{{route('logout')}}"  class="hvr-bounce-to-right" onclick="event.preventDefault(); this.closest('form').submit();"><i class="fa fa-cog nav_icon"></i> <span class="nav-label" style="padding-left:px"> Logout </span>  </a>
 
 								
 							 </form>
@@ -158,16 +155,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div id="page-wrapper" class="gray-bg dashbard-1">
        <div class="content-main">
  
-  		<!--banner-->	
+  		<!-- banner-->	 
 		    <div class="banner">
 		   
-				<h2>
-				<a href="index.html">Home</a>
-				<i class="fa fa-angle-right"></i>
+				<h2>			
 				<span>Dashboard</span>
 				</h2>
 		    </div>
-		<!--//banner-->
+
 
 	
   <div class="banner">  
@@ -177,9 +172,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 	 
-		<!---->
-<div class="copy fixed-bottom">
-            <p> &copy; 2016 Minimal. All Rights Reserved | Design by Tuki Soft </p>
+	
+<div class="copy fixed-bottom" >
+            <p> © 2017 EDAUS EDUCATIONAL CONSULTANCY. All Rights Reserved | Design by Tuki Soft </p>
 	    </div>
 		</div>
 		<div class="clearfix"> </div>

@@ -11,14 +11,21 @@
 	<!-- //custom-theme -->
 	<link href="{{ asset('frontend/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
 	<link href="{{ asset('frontend/css/JiSlider.css') }}" rel="stylesheet">
-	<link rel="stylesheet" href="css/flexslider.css') }}" type="text/css" media="screen" property="" />
+	<link rel="stylesheet" href="{{ asset('frontend/css/flexslider.css') }}" type="text/css" media="screen" property="" />
 	<!-- Owl-carousel-CSS -->
 	<link href="{{ asset('frontend/css/owl.carousel.css') }}" rel="stylesheet">
 	<link href="{{ asset('frontend/css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
 	<!-- font-awesome-icons -->
 	<link href="{{ asset('frontend/css/font-awesome.css') }}" rel="stylesheet">
+	<link href="{{ asset('frontend/css/bootnavbar.css') }}" rel="stylesheet">
 	<!-- //font-awesome-icons -->
 	<!-- <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,900" rel="stylesheet"> -->
+
+	<!-- for new nav barr -->
+
+    
+	<!-- new nav bar end -->
+
 </head>
 
 
