@@ -306,7 +306,10 @@ $selectTestimonials = $sc->selectTestimonial();
 	<h3 style="margin-top: 20px;" class="w3l_header w3_agileits_header"> Find <span>Us</span></h3>
 
 	<div class="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387145.86654334463!2d-74.25818682528057!3d40.70531100753592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1497241987900" allowfullscreen></iframe>
+	
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1757.9145233222919!2d83.98689466441319!3d28.21250607078916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39959500a0c258bf%3A0xb1de8d880cec132e!2sEDAUS%20STUDY%20SERVICE%20PVT.%20LTD.!5e0!3m2!1sen!2snp!4v1648623172894!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+			</iframe>
+	
 	</div>
 	<!-- //map -->
 
