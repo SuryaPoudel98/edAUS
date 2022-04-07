@@ -1517,7 +1517,7 @@ button.close {
 /*-- //to-top --*/
 /*-- services --*/
 .banner1 {
-	background: url(../images/banner.jpg) no-repeat 0px 0px;
+	background-image: linear-gradient(rgb(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/background.jpg);
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;

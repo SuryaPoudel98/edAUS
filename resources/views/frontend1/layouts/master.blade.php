@@ -2,6 +2,7 @@
 
 <head>
 	<title>Edaus Study Services Education And US ::Best consultancy in Nepal for Australia</title>
+	<link rel="icon" href="{{ asset('frontend/images/icon.jpg') }}">
 	<!-- custom-theme -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

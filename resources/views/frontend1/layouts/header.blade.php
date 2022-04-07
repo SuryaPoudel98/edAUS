@@ -57,7 +57,7 @@ $selectTestimonials = $sc->selectTestimonial();
 								<li><a href="{{ url('pages/').'/'.$subheading->id }}">{{ $subheading->child_title }}</a></li>
 								@endforeach
 
-								<li><a href="/contact">contact us</a></li>
+								
                               
 							</ul>
 						</li>
@@ -157,6 +157,7 @@ $selectTestimonials = $sc->selectTestimonial();
 
 							</ul>
 						</li>
+						<li><a href="/contact">contact us</a></li>
 						
 					</ul>
 				</nav>
