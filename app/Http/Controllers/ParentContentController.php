@@ -24,16 +24,18 @@ class ParentContentController extends Controller
 
     public function ParentContentStore(Request $request)
     {  
-        $image=$request->file('thumbnailimg');
-        $imageName=time().'.'.$image->extension();
-        $image->move(public_path('/uploads/thumbnailimg'), $imageName);
-        
-
-        
         $parentcontent = new ParentContent();
         $parentcontent->parentpage_id=$request->parentpage_id;
         $parentcontent->text =$request->text;
+        if($request->hasFile('thumbnailimg'))
+        {
+
+       
+        $image=$request->file('thumbnailimg');
+        $imageName=time().'.'.$image->extension();
+        $image->move(public_path('/uploads/thumbnailimg'), $imageName);      
         $parentcontent->thumbnailimg=$imageName;
+        }
 
         $parentcontent->save();
         return redirect()->back()->with('parentcontent_added','ParentContenr   added successfully'); 

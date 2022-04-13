@@ -91,7 +91,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <nav class="navbar-default navbar-static-top" role="navigation" style="position:fixed">
              <div class="navbar-header">
                
-               <h1> <a class="navbar-brand" href="{{ route('dashboard')}}">EDAUS</a></h1>         
+               <h1> <a class="navbar-brand" href="{{ route('dashboard')}}">ADMIN</a></h1>         
 			   </div>
 			 <div class=" border-bottom">
         	<div class="full-left">
@@ -133,6 +133,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </li>
                         <li>
                             <a href="{{ url('/Testimonial')}}" class=" hvr-bounce-to-right"><i class="fa fa-desktop nav_icon"></i> <span class="nav-label"> Testimonials </span></a>
+                       
+                        </li>
+                        <li>
+                            <a href="{{ route('branch')}}" class=" hvr-bounce-to-right"><i class="fa fa-desktop nav_icon"></i> <span class="nav-label"> Branch </span></a>
+                       
+                        </li>
+                        <li>
+                            <a href="{{ route('team')}}" class=" hvr-bounce-to-right"><i class="fa fa-desktop nav_icon"></i> <span class="nav-label"> Our Team </span></a>
+                       
+                        </li>
+                        <li>
+                            <a href="{{ route('post')}}" class=" hvr-bounce-to-right"><i class="fa fa-desktop nav_icon"></i> <span class="nav-label"> News And Events </span></a>
+                       
+                        </li>
+                        <li>
+                            <a href="{{ route('blog')}}" class=" hvr-bounce-to-right"><i class="fa fa-desktop nav_icon"></i> <span class="nav-label"> Blog </span></a>
                        
                         </li>
                         <li>

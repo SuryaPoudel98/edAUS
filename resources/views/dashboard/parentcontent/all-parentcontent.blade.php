@@ -35,8 +35,8 @@
                             <tr>
                                 <th scope="row">{{  $parentcontent->id}}</th>
                                 <td> {{ $parentcontent->parentpage->title}} </td>
-                                <!-- <td style="width: 700px;">{!! $parentcontent->text !!}</td> -->
-                                <!-- <td> <img src="uploads/thumbnailimg/{{ $parentcontent->Thumbnailimg }} " width="100px"> </td> -->
+                                <td style="width: 700px;">{!! $parentcontent->text !!}</td>
+                                <td> <img src="uploads/thumbnailimg/{{ $parentcontent->Thumbnailimg }} " width="100px"> </td>
                                 <td >
                                   <a href="/edit-parentcontent/{{ $parentcontent->id}}" class="btn btn-info">Edit </a> 
                         
